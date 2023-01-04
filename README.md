@@ -88,20 +88,22 @@ Ha a `cp test.txt /tmp/bak` nem fut le, akkor lefut a `cp test.txt /tmp` .
 <h3>Pontosvessző</h3>
 
 - Nem ellenőrzi az exit code-ot.
-- Ha több parancsot ; -vel szeparálunk, akkor mindenképp lefutnak, anélkül, hogy figyelembe vennék az előttük lévő exit code-ját.
+- Ha több parancsot `;` -vel szeparálunk, akkor mindenképp lefutnak, anélkül, hogy figyelembe vennék az előttük lévő exit code-ját.
 
 <h3>Exit parancs</h3>
-exit = kilépés
+
+- exit = kilépés
 - Ha megadom az exit után az exit codeot 0-255 között, akkor azzal lép ki.
 - Ha nem adom meg akkor az utolsó korábban lefutott parancs exit codeját örökli a `$?`.
 
 <h3>Összegzés</h3>
+
 - minden parancs visszaad egy exit status-t
-- 0 - 255
-- 0 = sikeres
+- 0-255
+- `0` = sikeres
 - 0-tól eltérő = error condition
 - `$?` változó tárolja az exit status-t
-- elágazást lehet if-fel vagy &&-el / || -ral
+- elágazást lehet if-fel vagy `&&` -el / `||` -ral
 - exit
 
 
