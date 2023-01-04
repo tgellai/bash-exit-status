@@ -1,6 +1,6 @@
 # bash-exit-status
 
-##Exit Status
+<h3>Exit Status</h3>
 exit status / return code /exit code
 range 0 - 255
 0 = sucess (sikeres)
@@ -9,7 +9,7 @@ Használj error checking-et!
 Használj man vagy info parancsot, hogy megtaláld az exit status jelentését!
 
 
-##Exit Status ellenőrzése
+<h3>Exit Status ellenőrzése</h3>
 
 #####PÉLDA:
 ```
@@ -21,7 +21,7 @@ echo "$?"
 2
 ```
 
-##Ping parancs
+<h3>Ping parancs</h3>
 
 `ping -c 1`
 A következőt jelenti:
@@ -82,17 +82,17 @@ Ha az `mkdir /tmp/bak` lefut, akkor és csak akkor fut le a `cp test.txt /tmp/ba
 Ha a `cp test.txt /tmp/bak` lefut, akkor a `cp test.txt /tmp` nem fut le.
 Ha a `cp test.txt /tmp/bak` nem fut le, akkor lefut a `cp test.txt /tmp` .
 
-##Pontosvessző
+<h3>Pontosvessző</h3>
 
 - Nem ellenőrzi az exit code-ot.
 - Ha több parancsot ; -vel szeparálunk, akkor mindenképp lefutnak, anélkül, hogy figyelembe vennék az előttük lévő exit code-ját.
 
-##Exit parancs
+<h3>Exit parancs</h3>
 exit = kilépés
 Ha megadom az exit után az exit codeot 0-255 között, akkor azzal lép ki.
 Ha nem adom meg akkor az utolsó korábban lefutott parancs exit codeját örökli a `$?`.
 
-##Összegzés
+<h3>Összegzés</h3>
 minden parancs visszaad egy exit status-t
 0 - 255
 0 = sikeres
