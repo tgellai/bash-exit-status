@@ -70,6 +70,9 @@ RETURN_CODE=$?
 echo $RETURN_CODE
 
 ```
+
+Az AND `&&` és az OR `||`
+
 | operátor | jelentés | példa |
 |:-|:-|:-|
 | && | AND | mkdir /tmp/bak && cp test.txt /tmp/bak |
