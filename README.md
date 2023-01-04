@@ -1,13 +1,13 @@
 # bash-exit-status
 
 <h3>Exit Status</h3>
-exit status / return code /exit code
-range 0 - 255
-0 = sucess (sikeres)
-0-tól eltérő = valamilyen hiba állapot
-Használj error checking-et!
-Használj man vagy info parancsot, hogy megtaláld az exit status jelentését!
 
+- exit status / return code /exit code
+- range 0 - 255
+- 0 = sucess (sikeres)
+- 0-tól eltérő = valamilyen hiba állapot
+- Használj error checking-et!
+- Használj man vagy info parancsot, hogy megtaláld az exit status jelentését!
 
 <h3>Exit Status ellenőrzése</h3>
 
@@ -27,9 +27,10 @@ echo "$?"
 <h3>Ping parancs</h3>
 
 `ping -c 1`
-A következőt jelenti:
-`-c <count>` = count vagyis számláló (hányszor próbálkozzon a ping)
-`-c 1` = 1 szer próbálja a pinget, utána álljon le
+
+**A következőt jelenti:**
+- `-c <count>` = count vagyis számláló (hányszor próbálkozzon a ping)
+- `-c 1` = 1 szer próbálja a pinget, utána álljon le
 
 <h5>1. host-reachable.sh</h5>
 
@@ -64,7 +65,9 @@ fi
 
 ```
 HOST="google.com"
+
 ping -c 1 $HOST
+
 RETURN_CODE=$?
 
 echo $RETURN_CODE
