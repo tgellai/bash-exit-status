@@ -12,11 +12,14 @@ Használj man vagy info parancsot, hogy megtaláld az exit status jelentését!
 <h3>Exit Status ellenőrzése</h3>
 
 <h4>PÉLDA:</h4>
+
 ```
 ls /nincs/ilyen
 echo "$?"
 ```
+
 <h4>KIMENET:</h4>
+
 ```
 2
 ```
@@ -89,16 +92,16 @@ Ha a `cp test.txt /tmp/bak` nem fut le, akkor lefut a `cp test.txt /tmp` .
 
 <h3>Exit parancs</h3>
 exit = kilépés
-Ha megadom az exit után az exit codeot 0-255 között, akkor azzal lép ki.
-Ha nem adom meg akkor az utolsó korábban lefutott parancs exit codeját örökli a `$?`.
+- Ha megadom az exit után az exit codeot 0-255 között, akkor azzal lép ki.
+- Ha nem adom meg akkor az utolsó korábban lefutott parancs exit codeját örökli a `$?`.
 
 <h3>Összegzés</h3>
-minden parancs visszaad egy exit status-t
-0 - 255
-0 = sikeres
-0-tól eltérő = error condition
-`$?` változó tárolja az exit status-t
-elágazást lehet if-fel vagy &&-el / || -ral
-exit
+- minden parancs visszaad egy exit status-t
+- 0 - 255
+- 0 = sikeres
+- 0-tól eltérő = error condition
+- `$?` változó tárolja az exit status-t
+- elágazást lehet if-fel vagy &&-el / || -ral
+- exit
 
 
