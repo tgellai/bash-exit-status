@@ -74,7 +74,7 @@ echo $RETURN_CODE
 
 ```
 
-Az AND `&&` és az OR `||`
+<h3>Az AND `&&` és az OR `||`</h3>
 
 | operátor | jelentés | példa |
 |:-|:-|:-|
