@@ -11,12 +11,12 @@ Használj man vagy info parancsot, hogy megtaláld az exit status jelentését!
 
 <h3>Exit Status ellenőrzése</h3>
 
-#####PÉLDA:
+<h4>PÉLDA:</h4>
 ```
 ls /nincs/ilyen
 echo "$?"
 ```
-#####KIMENET:
+<h4>KIMENET:</h4>
 ```
 2
 ```
@@ -28,7 +28,7 @@ A következőt jelenti:
 `-c <count>` = count vagyis számláló (hányszor próbálkozzon a ping)
 `-c 1` = 1 szer próbálja a pinget, utána álljon le
 
-#####1. host-reachable.sh
+<h5>1. host-reachable.sh</h5>
 
 ```
 HOST="google.com"
@@ -43,7 +43,7 @@ else
 fi
 ```
 
-#####2. host-unreachable.sh
+<h5>2. host-unreachable.sh</h5>
 
 ```
 HOST="google.com"
@@ -57,7 +57,7 @@ fi
 
 ```
 
-#####3. return-code.sh
+<h5>3. return-code.sh<h5>
 
 ```
 HOST="google.com"
